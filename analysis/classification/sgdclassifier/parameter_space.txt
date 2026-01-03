@@ -1,0 +1,15 @@
+[System]
+Name: parameter_space
+
+[Parameter]
+loss(enum): 0,1,2,3,4
+penalty(enum): 0,1,2,3
+alpha(enum): 0,1,2,3,4,5,6
+l1_ratio(enum): 0,1,2,3,4,5,6,7,8
+class_weight(enum): 0,1
+average(enum): 0,1
+learning_rate(enum): 0,1,2,3
+eta0(enum): 0,1,2,3,4,5
+power_t(enum): 0,1,2,3,4,5,6
+
+[Constraint]

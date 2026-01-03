@@ -1,0 +1,40 @@
+@relation trains
+@attribute Number_of_cars {'3','4','5'}
+@attribute Number_of_different_loads {'1','2','3','4'}
+@attribute num_wheels2 {'2','3'}
+@attribute length2 {'long','short'}
+@attribute shape2 {'closedrect','dblopnrect','openrect','opentrap','ushaped'}
+@attribute num_loads2 {'1','3'}
+@attribute load_shape2 {'circlelod','rectanglod','trianglod'}
+@attribute num_wheels3 {'2','3'}
+@attribute length3 {'long','short'}
+@attribute shape3 {'closedrect','dblopnrect','hexagon','jaggedtop','openrect','opentrap','slopetop','ushaped'}
+@attribute num_loads3 {'1','2'}
+@attribute load_shape3 {'circlelod','rectanglod','trianglod'}
+@attribute num_wheels5 {'-','2','3'}
+@attribute length5 {'-','long','short'}
+@attribute shape5 {'-','closedrect','ellipse','jaggedtop','openrect'}
+@attribute num_loads5 {'-','0','1','2'}
+@attribute load_shape5 {'-','circlelod','hexagonlod','rectanglod','trianglod'}
+@attribute length4 {'-','short'}
+@attribute shape4 {'-','openrect','opentrap'}
+@attribute load_shape4 {'-','circlelod','rectanglod'}
+@attribute Rectangle_next_to_rectangle {'0','1'}
+@attribute Rectangle_next_to_triangle {'0','1'}
+@attribute Rectangle_next_to_circle {'0','1'}
+@attribute Triangle_next_to_triangle {'0','1'}
+@attribute Triangle_next_to_hexagon {'0','1'}
+@attribute Triangle_next_to_circle {'0','1'}
+@attribute Hexagon_next_to_circle {'0','1'}
+@attribute class {'east','west'}
+@data
+'5','4','2','long','openrect','3','rectanglod','2','short','slopetop','1','trianglod','3','long','openrect','1','hexagonlod','short','openrect','circlelod','0','1','0','0','1','0','1','east'
+'4','3','2','short','ushaped','1','trianglod','2','short','opentrap','1','rectanglod','2','short','closedrect','2','circlelod','-','-','-','0','1','1','0','0','0','0','east'
+'4','2','2','short','openrect','1','circlelod','2','short','hexagon','1','trianglod','3','long','closedrect','1','trianglod','-','-','-','0','0','0','1','0','1','0','east'
+'5','2','2','short','opentrap','1','trianglod','2','short','dblopnrect','1','trianglod','2','short','ellipse','1','rectanglod','short','openrect','rectanglod','1','1','0','1','0','0','0','east'
+'4','3','2','short','dblopnrect','1','trianglod','3','long','closedrect','1','rectanglod','2','short','closedrect','1','circlelod','-','-','-','0','1','1','0','0','0','0','east'
+'3','2','2','long','closedrect','3','circlelod','2','short','openrect','1','trianglod','-','-','-','-','-','-','-','-','0','0','0','0','0','1','0','west'
+'4','2','2','short','dblopnrect','1','circlelod','2','short','ushaped','1','trianglod','2','long','jaggedtop','0','-','-','-','-','0','0','0','0','0','1','0','west'
+'3','2','3','long','closedrect','1','rectanglod','2','short','ushaped','1','circlelod','-','-','-','-','-','-','-','-','0','0','1','0','0','0','0','west'
+'5','2','2','short','opentrap','1','circlelod','2','long','jaggedtop','1','rectanglod','2','short','openrect','1','rectanglod','short','opentrap','circlelod','1','0','1','0','0','0','0','west'
+'3','1','2','short','ushaped','1','rectanglod','2','long','openrect','2','rectanglod','-','-','-','-','-','-','-','-','1','0','0','0','0','0','0','west'

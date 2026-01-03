@@ -1,0 +1,31 @@
+@relation lenses
+@attribute age {'young','pre-presbyopic','presbyopic'}
+@attribute specPres {'myope','hypermetrope'}
+@attribute astig {'no','yes'}
+@attribute tearProd {'reduced','normal'}
+@attribute class {'hardCL','softCL','noCL'}
+@data
+'young','myope','no','reduced','noCL'
+'young','myope','no','normal','softCL'
+'young','myope','yes','reduced','noCL'
+'young','myope','yes','normal','hardCL'
+'young','hypermetrope','no','reduced','noCL'
+'young','hypermetrope','no','normal','softCL'
+'young','hypermetrope','yes','reduced','noCL'
+'young','hypermetrope','yes','normal','hardCL'
+'pre-presbyopic','myope','no','reduced','noCL'
+'pre-presbyopic','myope','no','normal','softCL'
+'pre-presbyopic','myope','yes','reduced','noCL'
+'pre-presbyopic','myope','yes','normal','hardCL'
+'pre-presbyopic','hypermetrope','no','reduced','noCL'
+'pre-presbyopic','hypermetrope','no','normal','softCL'
+'pre-presbyopic','hypermetrope','yes','reduced','noCL'
+'pre-presbyopic','hypermetrope','yes','normal','noCL'
+'presbyopic','myope','no','reduced','noCL'
+'presbyopic','myope','no','normal','noCL'
+'presbyopic','myope','yes','reduced','noCL'
+'presbyopic','myope','yes','normal','hardCL'
+'presbyopic','hypermetrope','no','reduced','noCL'
+'presbyopic','hypermetrope','no','normal','softCL'
+'presbyopic','hypermetrope','yes','reduced','noCL'
+'presbyopic','hypermetrope','yes','normal','noCL'
