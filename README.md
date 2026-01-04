@@ -107,7 +107,7 @@ Run the notebook 00EXP_classification_icsa_main.ipynb to reproduce the paper's r
 
 Go to the "Generate" tab and select the value of t (4 for KNN, 3 for SGDC). Click "Randomize Don't-Care Values" and then export the covering array as a CSV file. Place it in analysis/classification/[classifier name]/.
 
-Then, run the block containing "get_param_configs" and then "run_classifier_configs". After this is finished, you can run demo.ipynb, which will train the projection models and produce the visualisations.
+Then, run the block containing "get_param_configs" and then "run_classifier_configs". After this is finished, you can run demo.ipynb, which will train the projection models and produce the visualisations. Note that some of the projections obtained may be slightly different across different machines, even with the same random seeds. However, the insights available via visualisation will be the same.
 
 The toolkit provides:
 * Lasso selection of instances/configurations
