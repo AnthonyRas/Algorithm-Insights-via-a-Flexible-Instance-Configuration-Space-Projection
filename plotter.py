@@ -184,7 +184,6 @@ class Plotter:
         r = parameter_data.shape[0]
         if configuration_variable_type is None:
             configuration_variable_type = get_variable_type_dict(parameter_data)
-        configuration_variable_type = get_variable_type_dict(parameter_data)
         instances_selected = np.ones(n, dtype=bool)
         instance_aggregate_performances = performance_matrix.mean(axis=1)
         configurations_selected = np.ones(r, dtype=bool)

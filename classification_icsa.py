@@ -256,7 +256,7 @@ class ClassificationMetadataGenerator:
         self.Classifier = Classifier
         self.n_splits = n_splits
         if n_jobs == -1 and multicore_mode == 'configs':
-            self.n_jobs = psutil.cpu_count(logical=False)//4  # avoid taking up too much memory
+            self.n_jobs = max(1, psutil.cpu_count(logical=False)//4)  # avoid taking up too much memory
         else:
             self.n_jobs = n_jobs
         self.value_error_correction_function = value_error_correction_function

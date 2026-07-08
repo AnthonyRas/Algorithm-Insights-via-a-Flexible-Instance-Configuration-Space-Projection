@@ -38,6 +38,7 @@ This repository provides the source code for the Instance-Configuration Analysis
 ├── classification_icsa.py       # Classification-specific utilities
 ├── network_analysis.py          # Network architecture experiments
 │
+├── tutorial.ipynb                        # Introductory tutorial (start here)
 ├── 00EXP_classification_icsa_main.ipynb  # Main experiment notebook
 ├── demo.ipynb                            # Interactive toolkit demo
 ├── network_experiments.ipynb             # Architecture experiments
@@ -59,7 +60,9 @@ This repository provides the source code for the Instance-Configuration Analysis
 
 ## Quick Start
 
-To launch the interactive ICSA toolkit with pre-computed results, run the demo.ipynb notebook. The fit_overlapping function produces the visual toolkit if results are already computed. Otherwise, it trains the projection models first.
+**Start with [tutorial.ipynb](tutorial.ipynb)**. This is an introduction to the toolkit, the projection models, and the expected metadata structure, running on pre-computed results.
+
+To launch the interactive ICSA toolkit with pre-computed results directly, run the demo.ipynb notebook (a terse version of the same workflow). The fit_overlapping function produces the visual toolkit if results are already computed. Otherwise, it trains the projection models first.
 
 ### Basic Usage Example
 

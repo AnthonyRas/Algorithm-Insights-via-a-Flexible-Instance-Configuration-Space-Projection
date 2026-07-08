@@ -103,12 +103,15 @@ class PerformancePreprocessorUnscaled:
 
 
 # convert long format performance (instance ID, configuration ID, value) to wide format
-# TODO: assumes every instance and configuration are evaluated at least once
 def long_to_wide(feature_data: pd.DataFrame, parameter_data: pd.DataFrame, performance_data: pd.DataFrame) -> pd.DataFrame:
     performance_matrix = performance_data.pivot(
         index=performance_data.columns[0], columns=performance_data.columns[1], values=performance_data.columns[2]
     )
-    return performance_matrix[parameter_data.index].loc[feature_data.index]
+    performance_matrix = performance_matrix[parameter_data.index].loc[feature_data.index]
+    assert not performance_matrix.isna().any().any(), \
+        "The performance data must contain a value for every (instance, configuration) pair; " \
+        "missing pairs would otherwise silently become NaN training targets."
+    return performance_matrix
 
 def preprocess_performance(
         feature_data: pd.DataFrame, parameter_data: pd.DataFrame, performance_data: pd.DataFrame, option: str

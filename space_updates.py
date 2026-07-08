@@ -177,8 +177,11 @@ class CategoricalColours:
             level_colours = [colour_set[i] for i in range(len(self.levels))]
         else:
             colour_set = sequential.Plasma
-            level_colours = [colour_set[int(round(i * (len(colour_set) - 1) / (len(self.levels) - 1)))] for i in
-                             range(len(self.levels))]
+            if len(self.levels) == 1:
+                level_colours = [colour_set[0]]
+            else:
+                level_colours = [colour_set[int(round(i * (len(colour_set) - 1) / (len(self.levels) - 1)))] for i in
+                                 range(len(self.levels))]
         levels_to_colours = dict(zip(self.levels, level_colours))
         colour_vector = series.map(levels_to_colours).values.flatten()
         return self.levels, level_colours, levels_to_colours, colour_vector

@@ -5,7 +5,8 @@ matplotlib>=3.10.8
 multiprocess>=0.70.18
 numpy>=2.2.6
 pandas>=2.3.3
-panel>=1.8.4
+# panel 1.8.7 breaks the toolkit's main plot
+panel>=1.8.4,!=1.8.7
 param>=2.3.1
 plotly>=6.3.1
 kaleido>=1.1.0
@@ -15,3 +16,4 @@ scikit_learn>=1.7.2
 scipy>=1.15.3
 tensorflow>=2.18.0
 tqdm>=4.67.1
+jupyter_bokeh>=4.1.0
